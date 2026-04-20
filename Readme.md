@@ -17,7 +17,8 @@ A modern and responsive **e-commerce landing page** built using **HTML, CSS, and
 
 ## 🖼️ Preview
 
-![Preview](https://via.placeholder.com/800x400)
+<img width="1916" height="1034" alt="image" src="https://github.com/user-attachments/assets/acaf524f-5491-4201-aba5-90803c2ae89d" />
+
 
 ---
 
