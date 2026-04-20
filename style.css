@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  animation: slideIn 1s ease;
+}
+
+.hero img {
+  width: 350px;
+  border-radius: 12px;
+  animation: fadeIn 2s ease;
+}
+
+/* Button */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Products Section */
+.products {
+  padding: 50px;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 20px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.card img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* GitHub Floating Button */
+.github-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  padding: 12px;
+  border-radius: 50%;
+  animation: float 3s ease-in-out infinite;
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+.github-float img {
+  width: 30px;
+}
+
+.github-float:hover {
+  transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
